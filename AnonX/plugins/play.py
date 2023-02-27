@@ -27,11 +27,11 @@ from AnonX.utils.logger import play_logs
 from AnonX.utils.stream.stream import stream
 
 # Command
-PLAY_COMMAND = get_command("PLAY_COMMAND")
+PLAY_COMMAND = get_command("تشغيل_COMMAND")
 
 
 @app.on_message(
-    filters.command(PLAY_COMMAND)
+    filters.command(تشغيل_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
