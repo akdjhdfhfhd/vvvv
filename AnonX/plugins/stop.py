@@ -10,11 +10,11 @@ from AnonX.utils.decorators import AdminRightsCheck
 from AnonX.utils.inline.play import close_keyboard
 
 # Commands
-STOP_COMMAND = get_command("STOP_COMMAND")
+STOP_COMMAND = get_command("ايقاف_COMMAND")
 
 
 @app.on_message(
-    filters.command(STOP_COMMAND)
+    filters.command(ايقاف_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
