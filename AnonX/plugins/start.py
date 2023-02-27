@@ -65,7 +65,7 @@ async def start_comm(client, message: Message, _):
                 limit = 0
                 results = {}
                 for i in stats:
-                    top_list = stats[i]["spot"]
+                    top_list = stats[i]["ايقاف"]
                     results[str(i)] = top_list
                     list_arranged = dict(
                         sorted(
@@ -173,7 +173,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/DevilsHeavenMF"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/ah07v"
                         ),
                     ],
                 ]
